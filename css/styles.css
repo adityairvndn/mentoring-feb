@@ -1,0 +1,92 @@
+body {
+    max-width: 1440px;
+}
+
+.hero-image {
+    background-image: url("../assets/img/hero-mage.png");
+    background-position: center;
+    background-size: cover;
+    height:600px;
+}
+
+nav {
+    height: 80px;
+    background: rgba(0, 0, 0, 0.2);
+    vertical-align: middle;
+}
+nav .logo h3 {
+    float:left;
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+nav .right {
+    float:right;
+}
+
+nav .right li, nav .right .sosmed {
+    display: inline;
+
+}
+
+
+
+
+.hero-text {
+    position: absolute;
+    bottom:100px;
+    left: 70px;
+    width:530px;
+    overflow: hidden;
+    color: white;
+}
+
+.hero-text h1 {
+    font-family: 'Lora';
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+.hero-text .col1, .hero-text .col2, .hero-text .col3 {
+    display:inline-block;
+    vertical-align:top;
+    padding:0 2px;
+}
+
+.hero-text .col3 {
+    width:420px;
+}
+
+.hero-text hr{
+    width: 20px;
+}
+
+.hero-text p{
+    margin:0 !important;
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.hero-text .adventure{
+    padding:10px 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+    display: inline-block;
+    border-radius: 8px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 12px;
+    letter-spacing: 1px;
+}
+
+
+
