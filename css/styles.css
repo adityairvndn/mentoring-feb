@@ -13,6 +13,7 @@ nav {
     height: 80px;
     background: rgba(0, 0, 0, 0.2);
     vertical-align: middle;
+    padding: 0 5%;
 }
 nav .logo h3 {
     float:left;
@@ -20,18 +21,47 @@ nav .logo h3 {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 22px;
+    line-height: 80px;
+    color: white;
+    padding:0;
+    margin:0;
 }
 
 nav .right {
     float:right;
 }
 
-nav .right li, nav .right .sosmed {
-    display: inline;
 
+nav .right li {
+    display: inline;
 }
 
+nav .right ul .menu {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 80px;
+    padding:0 5px;
+}
+
+nav .right ul .icon-header {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 80px;
+    letter-spacing: 1px;
+    padding:0 5px;
+}
+
+nav .right ul .icon-header .fa .fa-facebook {
+}
+
+nav .right ul {
+    margin:0 auto;
+}
 
 
 
