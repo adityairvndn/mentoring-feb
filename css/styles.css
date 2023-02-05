@@ -1,5 +1,6 @@
 body {
     max-width: 1440px;
+    width:100%;
 }
 
 .hero-image {
@@ -54,9 +55,6 @@ nav .right ul .icon-header {
     line-height: 80px;
     letter-spacing: 1px;
     padding:0 5px;
-}
-
-nav .right ul .icon-header .fa .fa-facebook {
 }
 
 nav .right ul {
