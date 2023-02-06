@@ -1,7 +1,5 @@
 body {
-    max-width: 1440px;
-    width:100%;
-}
+    max-width: 1440px;}
 
 .hero-image {
     background-image: url("../assets/img/hero-mage.png");
@@ -61,8 +59,6 @@ nav .right ul {
     margin:0 auto;
 }
 
-
-
 .hero-text {
     position: absolute;
     bottom:100px;
@@ -116,5 +112,149 @@ nav .right ul {
     letter-spacing: 1px;
 }
 
+/* END OF HERO */
 
+.popular-topics {
+    padding:70px;
+    width: 1300px;
+}
 
+.popular-topics h1 {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    /* identical to box height */
+    color: #495057;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 25px;
+    /* identical to box height, or 208% */
+    color: #495057;
+  }
+  
+  .tablinks:first-child {
+    padding-left:0;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    color: #D4A373;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    color: #D4A373;
+  }
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 0;
+        -webkit-animation: fadeEffect 1s;
+        animation: fadeEffect 1s;
+    }
+
+    @-webkit-keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    /* END OF TAB */
+
+    .row-blog {
+        display: flex;
+        width: 1300px;
+      }
+      
+    .column-blog {
+        flex: 25%;
+        height: 450px;
+        padding-right: 20px;
+    }
+
+    .column-blog:last-child{
+        padding-right: 0;
+    }
+
+    .column-blog .container {
+        position: relative;
+    }
+
+    .column-blog img {
+        width: 310px;
+        height: 280px;
+
+        border-radius: 5px;
+    }
+
+    .column-blog .meta {
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        color: #6C757D;
+    }
+
+    .column-blog h3 {
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #495057;
+    }
+
+    .column-blog .excerpt {
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #6C757D;
+    }
+
+    .column-blog .tag {
+        padding:10px 10px;
+        background-color: rgba(255, 255, 255, 0.15);
+        display: inline-block;
+        border-radius: 8px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 12px;
+        float: right;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 1000;
+        color:white;
+    }
