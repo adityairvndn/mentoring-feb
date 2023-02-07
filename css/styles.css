@@ -1,5 +1,6 @@
 body {
-    max-width: 1440px;}
+    width: 1360px;
+}
 
 .hero-image {
     background-image: url("../assets/img/hero-mage.png");
@@ -115,8 +116,11 @@ nav .right ul {
 /* END OF HERO */
 
 .popular-topics {
-    padding:70px;
-    width: 1300px;
+    padding:60px;
+    width: 1210px;
+    /* overflow: hidden;
+    position: absolute; */
+    flex-direction: column
 }
 
 .popular-topics h1 {
@@ -188,11 +192,9 @@ nav .right ul {
 
     .row-blog {
         display: flex;
-        width: 1300px;
       }
       
     .column-blog {
-        flex: 25%;
         height: 450px;
         padding-right: 20px;
     }
@@ -206,9 +208,8 @@ nav .right ul {
     }
 
     .column-blog img {
-        width: 310px;
-        height: 280px;
-
+        width: 100%;
+        height: auto;
         border-radius: 5px;
     }
 
@@ -257,4 +258,24 @@ nav .right ul {
         top: 10px;
         z-index: 1000;
         color:white;
+    }
+
+    /* END OF BLOG TAB */
+
+    .big-post {
+        width: 100%;
+        height: 600px;
+    }
+
+    .big-post img {
+        width: 100%;
+        position: relative;
+        opacity: 0.5;
+    }
+
+    .content-big-post {
+        background-color: #343A40;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
     }
