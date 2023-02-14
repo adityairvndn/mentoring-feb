@@ -10,10 +10,13 @@
 } */
 
 .hero-image {
-  background-image: url("../assets/img/hero-mage.png");
   background-position: center;
   background-size: cover;
   height: 600px;
+}
+
+.hero-home {
+  background-image: url("../assets/img/hero-mage.png");
 }
 
 nav {
@@ -124,12 +127,16 @@ h1 {
 
 /* END OF HERO */
 
+
+/* POPULAR TOPICS */
+
 .popular-topics {
-  padding: 60px;
-  width: 1210px;
+  padding: 150px  70px;
+  width:100%;
   /* overflow: hidden;
     position: absolute; */
   flex-direction: column;
+  background-color: #E5E5E5;
 }
 
 .popular-topics h1 {
@@ -207,62 +214,76 @@ h1 {
 
 /* END OF TAB */
 
-.row-blog {
+/* .blog__row {
   display: flex;
-}
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
 
-.column-blog {
-  height: 450px;
-  padding-right: 20px;
-}
+} */
 
-.column-blog:last-child {
+.blog__column:last-child {
   padding-right: 0;
 }
 
-.column-blog .container {
+.bg--white {
+  background-color: white;
+}
+
+.blog__column .container {
   position: relative;
 }
 
-.column-blog img {
+.blog__column {
+  overflow: hidden;
+  width: 23.5%;
+}
+
+.blog__content {
+  padding:20px 0;
+  align-items: center;
+  color: #3c4146;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 14px; */
+  line-height: 23px;
+}
+
+.blog__column img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.radius-5 {
   border-radius: 5px;
 }
 
-.column-blog .meta {
-  font-family: "Lora";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
+.pad-10 {
+  padding:10px;
+}
+
+.blog__column .meta {
   display: flex;
-  align-items: center;
-  color: #6c757d;
-}
-
-.column-blog h3 {
-  font-family: "Lora";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  color: #495057;
-}
-
-.column-blog .excerpt {
-  font-family: "Lora";
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
-  line-height: 20px;
-  color: #6c757d;
+  margin-bottom:12px;
 }
 
-.column-blog .tag {
+.blog__column h3 {
+  margin-bottom:12px;
+}
+
+.blog__column .excerpt {
+  margin-bottom:12px;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.blog__column .tag {
   padding: 10px 10px;
   background-color: rgba(255, 255, 255, 0.15);
-  display: inline-block;
+  /* display: inline-block; */
   border-radius: 8px;
   font-family: "Roboto";
   font-style: normal;
@@ -277,6 +298,12 @@ h1 {
   color: white;
 }
 
+
+
+.blog__hr {
+  border: 0.5px solid #E5E5E5;
+}
+
 /* END OF BLOG TAB */
 
 /* SECTION BIG POST */
@@ -284,14 +311,13 @@ h1 {
   width: 100%;
   height: 600px;
   position: relative;
+  /* background-size: contain; */
+  overflow: hidden;
 }
 
 .big-post img {
   display: block;
   width: 100%;
-  height: 100%;
-  /* z-index: 90; */
-  /* opacity: 0.5; */
 }
 
 .content-big-post {
@@ -333,26 +359,37 @@ h1 {
 .editor-picks {
     margin: 140px 70px;
     max-width:1300px;
+    /* width: 100%; */
   }
 
   h1.editor {
       color:#495057;
   }
   
-.row-blog-editor {
+.blog__row {
     display: flex;
     justify-content: space-around;
     gap: 20px;
 }
 
 
+
 .blog-editor {
     position: relative;
     overflow: hidden;
-    box-sizing: border-box;
-    width: 420px;
+    width: 640px;
     height: 355px;
     border-radius: 10px;
+    vertical-align: middle;
+
+}
+
+.blog__image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .blog-editor .overlay {
@@ -366,8 +403,14 @@ h1 {
     color: white;
 }
 
+.float-right {
+  display: flex;
+  justify-content: flex-end;
+  left: 0;
+  gap:10px;
+}
+
 .blog-editor .overlay .cat-blog {
-    float:right;
     padding: 10px 10px;
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: 10px;
@@ -460,4 +503,59 @@ h3.footer__heading {
   font-size: 14px;
   line-height: 18px;  
   color: #E5E5E5;
+}
+
+/* HALAMAN ARTIKEL */
+
+/* Hero */
+
+.hero-article {
+  background-image: url("../assets/img/bde7599f34bb5c8e8336b524b9beba56.jpg");
+}
+
+/* Blog */
+
+
+.blurb {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.avatar {
+  flex: 0 0 100%;
+  width: 50px;
+  margin-right: 17px;
+}
+
+.rounded {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.avatar img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.blurb .name, .blurb .position {
+  flex: 0 0 50%;
+  font-family: 'Lora';
+  font-size: 14px;
+  line-height: 25px;  
+  margin: auto 0;
+  width: 200px;
+  color: #495057;
+}
+
+
+/* PUBLIC */
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
