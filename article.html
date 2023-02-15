@@ -8,17 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800&family=Lora:wght@400;500;600;700&family=Roboto&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Lora"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Spartan"
     />
     <link
       rel="stylesheet"
@@ -28,75 +22,77 @@
     <title>Article</title>
   </head>
   <body>
-    <section class="hero-image hero-article">
-      <nav>
-        <div class="logo">
-          <h3>RUNO</h3>
-        </div>
-        <div class="right">
-          <ul>
-            <li><a class="menu" href="index.html">Home</a></li>
-            <li><a class="menu" href="#">About</a></li>
-            <li><a class="menu active" href="article.html">Article</a></li>
-            <li><a class="menu" href="#">Contact Us</a></li>
-            <li><a href="#" class="icon-header fa fa-facebook"></a></li>
-            <li><a href="#" class="icon-header fa fa-twitter"></a></li>
-            <li><a href="#" class="icon-header fa fa-youtube-play"></a></li>
-            <li><a href="#" class="icon-header fa fa-pinterest"></a></li>
-            <li><a href="#" class="icon-header fa fa-behance-square"></a></li>
-            <li><a href="#" class="icon-header fa fa-search"></a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="hero-text">
-        <div class="adventure">
-          <span>ADVENTURE</span>
-        </div>
-        <h1>Richird Norton photorealistic rendering as real photos</h1>
-        <div class="col1">
-          <p>08.08.2021</p>
-        </div>
-        <div class="col2">
-          <hr />
-        </div>
-        <div class="col3">
-          <p>
-            Progressively incentivize cooperative systems through technically
-            sound functionalities. The credibly productivate seamless data.
-          </p>
+    <section id="hero">
+      <div class="container__hero hero__article">
+        <nav>
+          <div class="logo">
+            <h3>RUNO</h3>
+          </div>
+          <div class="right">
+            <ul>
+              <li><a class="menu" href="index.html">Home</a></li>
+              <li><a class="menu" href="#">About</a></li>
+              <li><a class="menu active" href="article.html">Article</a></li>
+              <li><a class="menu" href="#">Contact Us</a></li>
+              <li><a href="#" class="icon-header fa fa-facebook"></a></li>
+              <li><a href="#" class="icon-header fa fa-twitter"></a></li>
+              <li><a href="#" class="icon-header fa fa-youtube-play"></a></li>
+              <li><a href="#" class="icon-header fa fa-pinterest"></a></li>
+              <li><a href="#" class="icon-header fa fa-behance-square"></a></li>
+              <li><a href="#" class="icon-header fa fa-search"></a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="hero-text">
+          <div class="adventure">
+            <span>ADVENTURE</span>
+          </div>
+          <h1>Richird Norton photorealistic rendering as real photos</h1>
+          <div class="col1">
+            <p>08.08.2021</p>
+          </div>
+          <div class="col2">
+            <hr />
+          </div>
+          <div class="col3">
+            <p>
+              Progressively incentivize cooperative systems through technically
+              sound functionalities. The credibly productivate seamless data.
+            </p>
+          </div>
         </div>
       </div>
     </section>
-    <section>
+    <section id="popular-topics">
       <div class="popular-topics">
         <h1>Popular Topics</h1>
         <div class="tab">
-          <button class="tablinks active" onclick="openTopic(event, 'All')">
+          <button class="tab__links active" onclick="openTopic(event, 'all')">
             All
           </button>
-          <button class="tablinks" onclick="openTopic(event, 'Adventure')">
+          <button class="tab__links" onclick="openTopic(event, 'adventure')">
             Adventure
           </button>
-          <button class="tablinks" onclick="openTopic(event, 'Travel')">
+          <button class="tab__links" onclick="openTopic(event, 'travel')">
             Travel
           </button>
-          <button class="tablinks" onclick="openTopic(event, 'Fashion')">
+          <button class="tab__links" onclick="openTopic(event, 'fashion')">
             Fashion
           </button>
-          <button class="tablinks" onclick="openTopic(event, 'Technology')">
+          <button class="tab__links" onclick="openTopic(event, 'technology')">
             Technology
           </button>
-          <button class="tablinks" onclick="openTopic(event, 'Branding')">
+          <button class="tab__links" onclick="openTopic(event, 'branding')">
             Branding
           </button>
         </div>
 
-        <div id="All" class="tabcontent" style="display: block">
+        <div id="all" class="tab__content" style="display: block">
           <div class="blog__row flex-wrap">
             <div class="blog__column radius-5">
               <div class="container">
                 <img
-                  src="assets/img/5eccb5b6588ac0b840f3bb7dcb638f56.jpg"
+                  src="assets/img/blog-image-woman-in-lake.jpg"
                   alt=""
                   srcset=""
                 />
@@ -113,10 +109,7 @@
                   <div class="blurb">
                     <div class="avatar">
                       <div class="rounded">
-                        <img
-                          src="assets/img/e408155028083e858df511097c262a08.jpg"
-                          alt=""
-                        />
+                        <img src="assets/img/avatar.jpg" alt="" />
                       </div>
                     </div>
                     <div class="name"><b>By Jennifer Lawrence</b></div>
@@ -128,7 +121,7 @@
             <div class="blog__column radius-5">
               <div class="container">
                 <img
-                  src="assets/img/5eccb5b6588ac0b840f3bb7dcb638f56.jpg"
+                  src="assets/img/blog-image-woman-in-lake.jpg"
                   alt=""
                   srcset=""
                 />
@@ -145,10 +138,7 @@
                   <div class="blurb">
                     <div class="avatar">
                       <div class="rounded">
-                        <img
-                          src="assets/img/e408155028083e858df511097c262a08.jpg"
-                          alt=""
-                        />
+                        <img src="assets/img/avatar.jpg" alt="" />
                       </div>
                     </div>
                     <div class="name"><b>By Jennifer Lawrence</b></div>
@@ -160,7 +150,7 @@
             <div class="blog__column radius-5">
               <div class="container">
                 <img
-                  src="assets/img/5eccb5b6588ac0b840f3bb7dcb638f56.jpg"
+                  src="assets/img/blog-image-woman-in-lake.jpg"
                   alt=""
                   srcset=""
                 />
@@ -177,10 +167,7 @@
                   <div class="blurb">
                     <div class="avatar">
                       <div class="rounded">
-                        <img
-                          src="assets/img/e408155028083e858df511097c262a08.jpg"
-                          alt=""
-                        />
+                        <img src="assets/img/avatar.jpg" alt="" />
                       </div>
                     </div>
                     <div class="name"><b>By Jennifer Lawrence</b></div>
@@ -192,7 +179,7 @@
             <div class="blog__column radius-5">
               <div class="container">
                 <img
-                  src="assets/img/5eccb5b6588ac0b840f3bb7dcb638f56.jpg"
+                  src="assets/img/blog-image-woman-in-lake.jpg"
                   alt=""
                   srcset=""
                 />
@@ -209,10 +196,7 @@
                   <div class="blurb">
                     <div class="avatar">
                       <div class="rounded">
-                        <img
-                          src="assets/img/e408155028083e858df511097c262a08.jpg"
-                          alt=""
-                        />
+                        <img src="assets/img/avatar.jpg" alt="" />
                       </div>
                     </div>
                     <div class="name"><b>By Jennifer Lawrence</b></div>
@@ -224,7 +208,7 @@
             <div class="blog__column radius-5">
               <div class="container">
                 <img
-                  src="assets/img/5eccb5b6588ac0b840f3bb7dcb638f56.jpg"
+                  src="assets/img/blog-image-woman-in-lake.jpg"
                   alt=""
                   srcset=""
                 />
@@ -241,10 +225,7 @@
                   <div class="blurb">
                     <div class="avatar">
                       <div class="rounded">
-                        <img
-                          src="assets/img/e408155028083e858df511097c262a08.jpg"
-                          alt=""
-                        />
+                        <img src="assets/img/avatar.jpg" alt="" />
                       </div>
                     </div>
                     <div class="name"><b>By Jennifer Lawrence</b></div>
@@ -256,7 +237,7 @@
             <div class="blog__column radius-5">
               <div class="container">
                 <img
-                  src="assets/img/5eccb5b6588ac0b840f3bb7dcb638f56.jpg"
+                  src="assets/img/blog-image-woman-in-lake.jpg"
                   alt=""
                   srcset=""
                 />
@@ -273,10 +254,7 @@
                   <div class="blurb">
                     <div class="avatar">
                       <div class="rounded">
-                        <img
-                          src="assets/img/e408155028083e858df511097c262a08.jpg"
-                          alt=""
-                        />
+                        <img src="assets/img/avatar.jpg" alt="" />
                       </div>
                     </div>
                     <div class="name"><b>By Jennifer Lawrence</b></div>
@@ -288,7 +266,7 @@
             <div class="blog__column radius-5">
               <div class="container">
                 <img
-                  src="assets/img/5eccb5b6588ac0b840f3bb7dcb638f56.jpg"
+                  src="assets/img/blog-image-woman-in-lake.jpg"
                   alt=""
                   srcset=""
                 />
@@ -305,10 +283,7 @@
                   <div class="blurb">
                     <div class="avatar">
                       <div class="rounded">
-                        <img
-                          src="assets/img/e408155028083e858df511097c262a08.jpg"
-                          alt=""
-                        />
+                        <img src="assets/img/avatar.jpg" alt="" />
                       </div>
                     </div>
                     <div class="name"><b>By Jennifer Lawrence</b></div>
@@ -320,7 +295,7 @@
             <div class="blog__column radius-5">
               <div class="container">
                 <img
-                  src="assets/img/5eccb5b6588ac0b840f3bb7dcb638f56.jpg"
+                  src="assets/img/blog-image-woman-in-lake.jpg"
                   alt=""
                   srcset=""
                 />
@@ -337,10 +312,7 @@
                   <div class="blurb">
                     <div class="avatar">
                       <div class="rounded">
-                        <img
-                          src="assets/img/e408155028083e858df511097c262a08.jpg"
-                          alt=""
-                        />
+                        <img src="assets/img/avatar.jpg" alt="" />
                       </div>
                     </div>
                     <div class="name"><b>By Jennifer Lawrence</b></div>
@@ -352,39 +324,35 @@
           </div>
         </div>
 
-        <div id="Adventure" class="tabcontent">
+        <div id="adventure" class="tab__content">
           <h3>Adventure</h3>
           <p>Paris is the capital of France.</p>
         </div>
 
-        <div id="Travel" class="tabcontent">
+        <div id="travel" class="tab__content">
           <h3>Travel</h3>
           <p>Tokyo is the capital of Japan.</p>
         </div>
 
-        <div id="Fashion" class="tabcontent">
+        <div id="fashion" class="tab__content">
           <h3>Fashion</h3>
           <p>Tokyo is the capital of Japan.</p>
         </div>
 
-        <div id="Technology" class="tabcontent">
+        <div id="technology" class="tab__content">
           <h3>Technology</h3>
           <p>Tokyo is the capital of Japan.</p>
         </div>
 
-        <div id="Branding" class="tabcontent">
+        <div id="branding" class="tab__content">
           <h3>Branding</h3>
           <p>Tokyo is the capital of Japan.</p>
         </div>
       </div>
     </section>
-    <section>
+    <section id="big-post">
       <div class="big-post">
-        <img
-          src="assets/img/2a368172fa3a1a514691d15dc1a1df42.jpg"
-          alt=""
-          srcset=""
-        />
+        <img src="assets/img/big-image-wanita-rgb.jpg" alt="" srcset="" />
         <div class="content-big-post">
           <div class="text">
             <div class="adventure">
@@ -401,92 +369,103 @@
         </div>
       </div>
     </section>
-    <section class="editor-picks">
-      <h1 class="editor">Editor's Pick</h1>
-      <div class="blog__row">
-        <div class="blog-editor">
-          <div class="blog__image">
-            <img
-              src="assets/img/5d63a7fac1b4c63a5ab78ef0c084b68e.jpg"
-              alt="blog-thumbnail"
-            />
-          </div>
-          <div class="overlay">
-            <div class="float-right">
-              <div class="cat-blog">FASHION</div>
-              <div class="cat-blog">FASHION</div>
+    <section id="editor-picks">
+      <div class="editor-picks">
+        <h1 class="editor">Editor's Pick</h1>
+        <div class="blog__row">
+          <div class="blog-editor">
+            <div class="blog__image">
+              <img
+                src="assets/img/image-blog-man-from-top.jpg"
+                alt="blog-thumbnail"
+              />
             </div>
-            <div class="content-blog">
-              <p class="date-blog">08.08.2021</p>
-              <h3 class="title-blog">
-                Richird Norton photorealistic rendering as real photos
-              </h3>
-              <p class="excerpt-blog">
-                Progressively incenti vize cooperative systems through
-                technically sound functionalities. The credibly productivate
-                seamless data.
-              </p>
+            <div class="overlay">
+              <div class="float-right">
+                <div class="cat-blog">FASHION</div>
+                <div class="cat-blog">FASHION</div>
+              </div>
+              <div class="content-blog">
+                <p class="date-blog">08.08.2021</p>
+                <h3 class="title-blog">
+                  Richird Norton photorealistic rendering as real photos
+                </h3>
+                <p class="excerpt-blog">
+                  Progressively incenti vize cooperative systems through
+                  technically sound functionalities. The credibly productivate
+                  seamless data.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="blog-editor">
-          <div class="blog__image">
-            <img
-              src="assets/img/299ae52b084d4ed84993ea25d4ffd678.jpg"
-              alt="blog-thumbnail"
-            />
-          </div>
-          <div class="overlay">
-            <div class="float-right">
-              <div class="cat-blog">FASHION</div>
-              <div class="cat-blog">FASHION</div>
+          <div class="blog-editor">
+            <div class="blog__image">
+              <img
+                src="assets/img/image-blog-man-from-top.jpg"
+                alt="blog-thumbnail"
+              />
             </div>
-            <div class="content-blog">
-              <p class="date-blog">08.08.2021</p>
-              <h3 class="title-blog">
-                Richird Norton photorealistic rendering as real photos
-              </h3>
-              <p class="excerpt-blog">
-                Progressively incenti vize cooperative systems through
-                technically sound functionalities. The credibly productivate
-                seamless data.
-              </p>
+            <div class="overlay">
+              <div class="float-right">
+                <div class="cat-blog">FASHION</div>
+                <div class="cat-blog">FASHION</div>
+              </div>
+              <div class="content-blog">
+                <p class="date-blog">08.08.2021</p>
+                <h3 class="title-blog">
+                  Richird Norton photorealistic rendering as real photos
+                </h3>
+                <p class="excerpt-blog">
+                  Progressively incenti vize cooperative systems through
+                  technically sound functionalities. The credibly productivate
+                  seamless data.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="footer__inner">
-        <div class="footer__col-1">
-          <h3 class="footer__heading">Contact the Publisher</h3>
-          <p class="footer__txt">mike@runo.com</p>
-          <p class="footer__txt">+944 450 904 505</p>
-        </div>
-        <div class="footer__col-2">
-          <h3 class="footer__heading">Explorate</h3>
-          <p class="footer__txt">About</p>
-          <p class="footer__txt">Partners</p>
-          <p class="footer__txt">Job Opportunities</p>
-          <p class="footer__txt">Advertise</p>
-          <p class="footer__txt">Membership</p>
-        </div>
-        <div class="footer__col-3">
-          <h3 class="footer__heading">Headquarter</h3>
-          <p class="footer__txt">
-            191 Middleville Road, NY 1001, Sydney Australia
-          </p>
-        </div>
-        <div class="footer__col-4">
-          <h3 class="footer__heading">Contact the Publisher</h3>
-          <p class="footer__txt">mike@runo.com</p>
-          <p class="footer__txt">+944 450 904 505</p>
+    <section id="footer">
+      <div class="footer">
+        <div class="footer__inner">
+          <div class="footer__col-1">
+            <h3 class="footer__heading">Contact the Publisher</h3>
+            <p class="footer__txt">mike@runo.com</p>
+            <p class="footer__txt">+944 450 904 505</p>
+          </div>
+          <div class="footer__col-2">
+            <h3 class="footer__heading">Explorate</h3>
+            <p class="footer__txt">About</p>
+            <p class="footer__txt">Partners</p>
+            <p class="footer__txt">Job Opportunities</p>
+            <p class="footer__txt">Advertise</p>
+            <p class="footer__txt">Membership</p>
+          </div>
+          <div class="footer__col-3">
+            <h3 class="footer__heading">Headquarter</h3>
+            <p class="footer__txt">
+              191 Middleville Road, NY 1001, Sydney Australia
+            </p>
+          </div>
+          <div class="footer__col-4">
+            <h3 class="footer__heading">Contact the Publisher</h3>
+            <div class="footer__social">
+              <img src="assets/icon/twitter-761629.svg" alt="" />
+              <img src="assets/icon/youtube-761641.svg" alt="" />
+              <img src="assets/icon/pinterest-761616.svg" alt="" />
+              <img src="assets/icon/behance-761644.svg" alt="" />
+              <img src="assets/icon/facebook-761598.svg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-    <div class="sub-footer">
-      <div class="sub-footer__col">2021 | RUNO Publisher Studio</div>
-      <div class="sub-footer__col">Subscribe Now</div>
-    </div>
+    </section>
+    <section id="sub-footer">
+      <div class="sub-footer">
+        <div class="sub-footer__col">2021 | RUNO Publisher Studio</div>
+        <div class="sub-footer__col">Subscribe Now</div>
+      </div>
+    </section>
   </body>
 </html>
