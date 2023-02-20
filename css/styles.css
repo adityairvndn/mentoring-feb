@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 section {
@@ -113,10 +114,10 @@ h1 {
   width: 420px;
 }
 
-  hr {
+  /* hr {
   width: 30px;
 
-}
+} */
 
 .hero-text p {
   font-family: "Lora";
@@ -238,7 +239,7 @@ h1 {
 
 .blog__column {
   overflow: hidden;
-  width: 23.5%;
+  /* width: 23.5%; */
 }
 
 .blog__content {
@@ -372,9 +373,11 @@ h1 {
   }
   
 .blog__row {
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
-    gap: 20px;
+    gap: 20px; */
+    display: grid;
+    width: 100%;
 }
 
 
@@ -382,7 +385,7 @@ h1 {
 .blog-editor {
     position: relative;
     overflow: hidden;
-    width: 640px;
+    /* width: 640px; */
     height: 355px;
     border-radius: 10px;
     vertical-align: middle;
@@ -675,6 +678,22 @@ border: 1px solid #E5E5E5;
 
 .mr-top-auto {
   margin-top:auto;
+}
+
+.grid-blog-4-col {
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.grid-blog-3-col {
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+}
+
+.grid-blog-2-col {
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
 }
 
 
