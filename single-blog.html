@@ -29,19 +29,33 @@
           <div class="logo">
             <h3>RUNO</h3>
           </div>
-          <div class="right">
-            <ul>
-              <li><a class="menu active" href="index.html">Home</a></li>
-              <li><a class="menu" href="#">About</a></li>
-              <li><a class="menu" href="article.html">Article</a></li>
-              <li><a class="menu" href="#">Contact Us</a></li>
-              <li><a href="#" class="icon-header fa fa-facebook"></a></li>
-              <li><a href="#" class="icon-header fa fa-twitter"></a></li>
-              <li><a href="#" class="icon-header fa fa-youtube-play"></a></li>
-              <li><a href="#" class="icon-header fa fa-pinterest"></a></li>
-              <li><a href="#" class="icon-header fa fa-behance-square"></a></li>
-              <li><a href="#" class="icon-header fa fa-search"></a></li>
+          <div class="menu">
+            <!-- Hamburger Menu Start -->
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-button-container" for="menu-toggle">
+              <img src="assets/icon/icons8-menu.svg" alt="" />
+            </label>
+            <!-- Hamburger Menu end -->
+            <ul class="parent__menu" id="my-parent-menu">
+              <li><a class="menu__item active" href="index.html">Home</a></li>
+              <li><a class="menu__item" href="#">About</a></li>
+              <li><a class="menu__item" href="article.html">Article</a></li>
+              <li><a class="menu__item" href="#">Contact Us</a></li>
             </ul>
+            <div class="vl"></div>
+            <div class="menu__social flex gap-15">
+              <img src="assets/icon/twitter-761629.svg" alt="" />
+              <img src="assets/icon/youtube-761641.svg" alt="" />
+              <img src="assets/icon/pinterest-761616.svg" alt="" />
+              <img src="assets/icon/behance-761644.svg" alt="" />
+              <img src="assets/icon/facebook-761598.svg" alt="" />
+            </div>
+            <div class="vl"></div>
+            <img
+              class="search-icon"
+              src="assets/icon/icons8-search.svg"
+              alt=""
+            />
           </div>
         </nav>
         <div class="hero-text hero-text-center">
@@ -127,15 +141,17 @@
               </div>
             </div>
             <hr />
-            <div class="content__author">
+            <div class="content__author flex-wrap">
               <div class="blurb">
                 <div class="avatar">
                   <div class="rounded">
                     <img src="assets/img/avatar.jpg" alt="" />
                   </div>
                 </div>
-                <div class="name"><b>By Jennifer Lawrence</b></div>
-                <div class="position">Thinker & Designer</div>
+                <div class="bio">
+                  <div class="name"><b>By Jennifer Lawrence</b></div>
+                  <div class="position">Thinker & Designer</div>
+                </div>
               </div>
               <div class="share-social-media">
                 <img src="assets/icon/twitter-761629.svg" alt="" />
