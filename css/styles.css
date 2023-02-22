@@ -6,9 +6,14 @@
 }
 
 section {
-    max-width:1366px;
+    width:100%;
+    position: relative;
     /* width:100%; */
-    margin:0 auto;
+}
+
+.container {
+  max-width:1440px;
+  margin:0 auto;
 }
 
 .container__hero {
@@ -23,7 +28,6 @@ section {
 
 nav {
   height: 80px;
-  background: rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -133,12 +137,16 @@ h1 {
 
 /* POPULAR TOPICS */
 
-.popular-topics {
+
+#popular-topics {
+  background-color: #E5E5E5;
+}
+
+  .popular-topics {
   padding: 100px  70px;
   /* overflow: hidden;
     position: absolute; */
   flex-direction: column;
-  background-color: #E5E5E5;
 }
 
 .popular-topics h1 {
@@ -309,15 +317,23 @@ h1 {
 /* END OF BLOG TAB */
 
 /* SECTION BIG POST */
-.big-post {
-  width: 100%;
+#big-post {
   height: 600px;
   position: relative;
   /* background-size: contain; */
   overflow: hidden;
 }
 
-.big-post img {
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(52, 58, 64, 0.4);
+  height: 100%;
+}
+
+#big-post img {
   display: block;
   width: 100%;
   height: 100%;
@@ -326,16 +342,11 @@ h1 {
 }
 
 .content-big-post {
-  position: absolute;
+  height: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  /* opacity: 0.5; */
-  background-color: rgba(52, 58, 64, 0.4);
 }
 
 .content-big-post .text {
@@ -362,8 +373,7 @@ h1 {
 /* Section big post */
 
 .editor-picks {
-    margin: 140px 70px;
-    max-width:1300px;
+    padding: 140px 70px;
     /* width: 100%; */
   }
 
@@ -450,7 +460,6 @@ h1 {
 
 .footer {
   color:white;
-  background-color: #212529;
   height:400px;
   padding: 106px 70px;
 }
@@ -508,7 +517,6 @@ h3.footer__heading {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  background-color: #343A40;
 }
 
 .sub-footer__col {
@@ -710,6 +718,18 @@ border: 1px solid #E5E5E5;
   grid-column-gap: 20px;
 }
 
+.bg-header {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.bg-footer {
+  background-color: #212529;
+}
+
+.bg-sub-footer {
+  background-color: #343A40;
+}
+
 /* COBA HAMBURGER */
 .parent__menu {
   display: flex;
@@ -775,7 +795,6 @@ border: 1px solid #E5E5E5;
 }
 
 @media (max-width: 640px) {
-
 
   /* Menu Header */
   .menu .vl , .menu .menu__social, .menu .search-icon {
@@ -917,7 +936,6 @@ border: 1px solid #E5E5E5;
 
   .footer {
     color: white;
-    background-color: #212529;
     height: auto;
     padding: 50px 30px;
   }
